@@ -1,0 +1,41 @@
+# ============================
+# Project: ASRS Safety Pipeline
+# ============================
+
+# --- DATA (never commit raw or processed data) ---
+data/raw/
+data/interim/
+data/processed/
+
+# --- PYTHON CACHE ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- JUPYTER NOTEBOOKS ---
+.ipynb_checkpoints/
+
+# --- ENVIRONMENTS ---
+.env
+.venv/
+venv/
+env/
+
+# --- IDE / EDITOR FILES ---
+.vscode/
+.idea/
+
+# --- OS FILES ---
+.DS_Store
+Thumbs.db
+
+# --- LOGS / TEMP ---
+logs/
+*.log
+tmp/
+temp/
+
+# --- MISC ---
+# Ignore any accidental CSVs placed at root
+*.csv
