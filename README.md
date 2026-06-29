@@ -18,7 +18,7 @@ This plot demonstrates:
 - meaningful separation between narrative patterns  
 - a visually interpretable structure in high‑dimensional text data  
 
-![tsne_clusters](images/tsne_clusters.png)
+![tsne_clusters](notebooks/images/tsne_clusters.png)
 
 # 📂 Project Structure
 ```
