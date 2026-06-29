@@ -7,6 +7,19 @@ The workflow ingests raw multi‑header CSVs, cleans and normalizes the dataset,
 
 The goal is to convert unstructured safety narratives into structured, analyzable intelligence.
 
+# 📊 Cluster Visualization (t‑SNE)
+
+To understand the structure of the 16,535 ASRS narratives, I applied t‑SNE to the TF‑IDF matrix and colored each point by its assigned cluster. The result is a circular, high‑density visualization that reveals clear thematic separation between incident types.
+
+This plot demonstrates:
+
+- strong cluster cohesion  
+- distinct operational themes  
+- meaningful separation between narrative patterns  
+- a visually interpretable structure in high‑dimensional text data  
+
+![tsne_clusters](images/tsne_clusters.png)
+
 # 📂 Project Structure
 ```
 project/
