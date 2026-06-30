@@ -27,14 +27,27 @@ project/
 ├── data/
 │   ├── raw/                # Original ASRS CSVs (multi-header, malformed rows)
 │   ├── interim/            # Merged dataset after ingestion
-│   └── processed/          # Cleaned dataset ready for LLM extraction
+│   └── processed/          # Cleaned + enriched datasets (HFACS, risk, clusters)
 │
 ├── notebooks/
-│   ├── 01_exploration.ipynb   # Ingestion, header correction, merge
-│   ├── 02_cleaning.ipynb      # Text cleaning, normalization, preprocessing
-│   └── 03_llm_extraction.ipynb# Structured extraction (causal chains, HFACS, risk)
+│   ├── 01_ingest_clean.ipynb        # Ingestion, header correction, merge
+│   ├── 02_exploration.ipynb         # Initial EDA, schema validation
+│   ├── 03_cleaning.ipynb            # Text cleaning, normalization, preprocessing
+│   ├── 04_llm_extraction.ipynb      # Causal chains, HFACS flags, risk signals
+│   ├── 05_risk_scoring.ipynb        # Risk scoring model
+│   ├── 06_causal_chain_viz.ipynb    # Graph-based causal chain visualization
+│   ├── 07_clustering.ipynb          # TF-IDF, KMeans, cluster assignment
+│   ├── 08_cluster_visualization.ipynb # UMAP + t-SNE plots
+│   ├── 09_hfacs_cluster_analysis.ipynb # HFACS × cluster heatmap
+│   └── 10_exec_summary.ipynb        # Executive summary notebook
+│
+├── images/
+│   ├── tsne_clusters.png
+│   ├── umap_clusters.png
+│   └── hfacs_cluster_heatmap.png
 │
 └── README.md
+
 ```
 # 🛠️ Pipeline Summary
 ## 1. Ingestion & Exploration (01_exploration.ipynb)
